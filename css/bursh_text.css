@@ -1,0 +1,15 @@
+.bursh_text {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: #1a1c1b;
+    font-weight: 600;
+}
+
+.lorem_text {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: #50504f;
+    margin: 0px;
+}

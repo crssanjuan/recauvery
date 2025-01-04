@@ -1,0 +1,20 @@
+
+
+html, body {
+  height: 100%; /* Ensure the body takes the full height */
+  margin: 0; /* Remove default margin */
+}
+
+
+.footer {
+  margin-top: 50px;
+  position: relative; /* Change to relative */
+  padding: 2rem;
+  background: #1b1f73;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}

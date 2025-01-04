@@ -1,0 +1,75 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between boxes */
+    padding: 20px; /* Space around the grid container */
+}
+
+/* Product Box Styling */
+.product_box {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+/* Image Styling */
+.product_box img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Hover Effect */
+.product_box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading and Text Styling */
+.bursh_text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lorem_text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+.btn_main .buy_bt {
+    margin-top: 10px;
+}
+
+.buy_bt a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.buy_bt a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust column size for smaller screens */
+    }
+}

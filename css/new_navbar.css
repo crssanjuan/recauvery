@@ -1,0 +1,160 @@
+/* general formatting, not necessary for sidebar menu to function */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Barlow", sans-serif;
+}
+
+p {
+  padding: 5px;
+}
+
+.desc {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 70%;
+  height: 50%;
+  background-color: lavender;
+  text-align: center;
+  font-size: 20px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 14px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* formatting for links, not necessary for sidebar menu to function */
+a {
+ 
+  text-decoration: none;
+  background-image: linear-gradient(white, white);
+  background-size: 0 2px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
+  padding-bottom: 1px;
+}
+
+a:hover {
+  background-size: 100% 2px, auto;
+}
+
+.credit {
+  font-size: 18px;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.credit a {
+  color: purple;
+  background-image: none;
+}
+.credit a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.credit .blog {
+  display: block;
+  margin: 7px auto;
+  line-height: 21px;
+  width: 80%;
+  height: auto;
+  padding: 7px 10px;
+  border: 2px solid purple;
+  border-radius: 7px;
+}
+
+/* sidebar menu */
+.sidenavbar {
+  height: 100%;
+  width: 0;
+  /* initial width is set to 0, slide happens with JS */
+  position: fixed;
+  /* keeps sidenavbar in place */
+  z-index: 1000;
+  /* makes sidenavbar stay on top */
+  overflow-x: hidden;
+  /* prevents unwanted scrollbar */
+  top: 0;
+  left: 0;
+  background-color: darkBlue;
+  transition: all ease-in 0.5s;
+}
+.sidenavbar a {
+  padding: 7px 14px 3px 14px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: all ease 0.3s;
+  text-align: center;
+}
+.sidenavbar .top {
+  /* to drop the first link down from the top. Not neccessary, simply an aestetic preference */
+  margin-top: 35px;
+}
+.sidenavbar a:hover {
+  color: #3eb4f8;
+}
+
+.openbtn {
+  cursor: pointer;
+  color: white;
+  background-color: darkBlue;
+  border: none;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  top: 75px;
+  transition: all ease-in 0.5s;
+  border-radius: 0 5px 5px 0;
+  z-index: 999;
+}
+
+.openbtn:hover {
+  background-color: #3eb4f8;
+}
+
+/* double chevron wrapped in a span */
+#chevron {
+  transition: all ease-in 0.5s;
+  float: right;
+  font-size: 20px;
+  margin-right: 5px;
+  color: #fff;
+}
+
+/* styling for the corner banners */
+#bannerLinks {
+  width: 220px;
+  height: 220px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+#bannerLinks a {
+  display: block;
+  background: #4a0069;
+  color: white;
+  text-align: center;
+  line-height: 21px;
+  height: 21px;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 3px;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+#bannerLinks a:nth-child(2) {
+  background-color: #838383;
+}
+#bannerLinks a:hover {
+  text-transform: uppercase;
+}
+.reco {
+  color: white;
+}

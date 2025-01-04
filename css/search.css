@@ -1,0 +1,27 @@
+/* Style for the search bar */
+.search-container {
+   text-align: center; /* Center the search bar */
+   margin-bottom: 20px; /* Add some space below the search bar */
+}
+
+.styled-search {
+   width: 300px; /* Smaller width */
+   height: 35px; /* Adjust height */
+   padding: 5px 10px; /* Add padding for a nicer look */
+   border: 1px solid #2c3e50; /* Navy blue border */
+   border-radius: 5px; /* Rounded corners */
+   font-size: 16px; /* Font size */
+   color: #2c3e50; /* Navy blue text color */
+   background-color: #f0f4f7; /* Light background color */
+   box-shadow: 0px 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+   transition: border-color 0.3s ease; /* Smooth transition for border color on focus */
+}
+
+.styled-search::placeholder {
+   color: #7f8c8d; /* Grey placeholder text */
+}
+
+.styled-search:focus {
+   border-color: #001f3f; /* Darker navy blue border on focus */
+   outline: none; /* Remove default outline */
+}

@@ -1,0 +1,18 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between boxes */
+    padding: 20px; /* Space around the grid container */
+}
+
+
+.buy_bt li a:hover {
+    background-color: #252c93;
+    color: #ffffff;
+
+}
+
+.buy_bt li.active a {
+    background-color: #252c93;
+    color: #fff;
+}
